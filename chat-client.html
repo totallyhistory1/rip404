@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PHP Websocket Chat Demo</title>
+    <link rel="stylesheet" href="chat-client.css"/>
+    <script src="chat-client.js"></script>
+  </head>
+  <body>
+    <div id="chat-wrap">
+      <!-- (A) CHAT MESSAGES -->
+      <div id="chat-messages"></div>
+
+      <!-- (B) SET NAME -->
+      <form id="chat-name" onsubmit="return chat.start()">
+        <input type="text" id="chat-name-set" placeholder="What is your name?" value="John Doe" required/>
+        <input type="submit" id="chat-name-go" value="Start"/>
+      </form>
+
+      <!-- (C) SEND MESSAGE -->
+      <form id="chat-send" onsubmit="return chat.send()">
+        <input type="text" id="chat-send-text" placeholder="Enter message" required/>
+        <input type="submit" id="chat-send-go" value="Send"/>
+      </form>
+    </div>
+  </body>
+</html>
