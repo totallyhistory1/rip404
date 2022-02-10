@@ -59,6 +59,16 @@ window.onclick = function(event) {
 
 </body>
 </html>
+    <button onclick="changePageFavicon()">
+        Change favicon to 'gc.png'
+    </button>
+    <script var link = document.querySelector("link[rel~='icon']");
+if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+link.href = 'gc.png';></script>
     <h4>Contact us at</h4><b>rip404@programmer.net</b><h4>.</h4>
     <button onclick="changePageTitle(1)">
         Change Page Title to rip404
