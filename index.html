@@ -5,14 +5,14 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" href="pack_icon.png" sizes="32x32" />
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="style1.css">   
       <!-- top: shift it to the right by 800 pixels -->
 <body>
-
+    
+  <a href="games.html">  
+       <button>games</button>
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
 
 <div id="id01" class="modal">
@@ -59,20 +59,13 @@ window.onclick = function(event) {
 
 </body>
 </html>
-    <button onclick="changePageFavicon()">
-        Change favicon to 'gc.png'
-    </button>
-    <script var link = document.querySelector("link[rel~='icon']");
-if (!link) {
-    link = document.createElement('link');
-    link.rel = 'icon';
-    document.getElementsByTagName('head')[0].appendChild(link);
-}
-link.href = 'gc.png';></script>
+    
     <h4>Contact us at</h4><b>rip404@programmer.net</b><h4>.</h4>
     <button onclick="changePageTitle(1)">
         Change Page Title to rip404
     </button>
+    
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
     <script type="text/javascript">
         function changePageTitle(1) {
             newPageTitle = 'rip404 | home';
