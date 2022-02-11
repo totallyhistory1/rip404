@@ -1,2 +1,2 @@
 # rip404
-https://www.rip404.tk
+https://rip404-swag.tk
