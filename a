@@ -1,0 +1,8 @@
+<iframe id="1" width="710" height="570" src="https://w8.snokido.com/games/html5/fnaf/1/index.html"/></iframe>
+ 
+<!-- (B) FULLSCREEN BUTTONS -->
+<div>
+  <!-- (B2) fullscreen -->
+  <input type="button" value="FULLSCREEN" width="50" hight="50" 
+         onclick="document.getElementById('1').requestFullscreen()"/>
+</div>
