@@ -1,0 +1,4 @@
+1 = 1v1 lol
+2 = 2048
+3 = agar.io
+4 = baskettball stars
