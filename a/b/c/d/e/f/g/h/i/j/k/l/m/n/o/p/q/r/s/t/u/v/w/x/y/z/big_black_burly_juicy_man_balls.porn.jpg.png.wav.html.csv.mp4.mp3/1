@@ -1,0 +1,9 @@
+,doc = scs
+"/bg/green,black mix
+}
+]
+sidebar view = true
+top bar view = true
+footer veiw = true
+top bar contains?=home,help,news,contact,partners
+load ./index.html
