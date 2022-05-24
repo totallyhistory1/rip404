@@ -1,12 +1,35 @@
-<iframe id="1" width="100%" height="100%> src="https://ejvd3326248pklq0mtj313irgbc2vsrb-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://sites.google.com/site/s035r8h4/1v1.xml&container=enterprise&view=default&lang=en&country=ALL&sanitize=0&v=544c660bc8b16c1d&libs=core&mid=172&parent=https://sites.google.com/site/unblockedgames66ez/1v1-lol#st=e%3DAIHE3cBK9D0UGibwSQF2F64MR8cb4pzmPVFPpm9x2iU1OmvV3wfrHm9F2stu5dMRRYLHGsmiZQNreywjA%252F5m1pl9Ovr49lxTSbekq%252F58DGx8Fju5Kybmy15YlmhPX4edPMPIxnzqTss%252F%26c%3Denterprise&rpctoken=-1798097197484458310"/></iframe>
-// element which needs to enter full-screen mode
-var element = document.querySelector("1");
-
-// make the element go to full-screen mode
-element.requestFullscreen()
-	.then(function() {
-		// element has entered fullscreen mode successfully
-	})
-	.catch(function(error) {
-		// element could not enter fullscreen mode
-	});
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <style>
+      html body {width: 100%;height: 100%;padding: 0px;margin: 0px;overflow: hidden;font-family: arial;font-size: 10px;color: #6e6e6e;background-color: #000;} #preview-frame {width: 100%;background-color: #fff;}</style>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+         //function to fix height of iframe!
+         var calcHeight = function() {
+           //var headerDimensions = 0; //$('#header-bar').height();
+           $('#preview-frame').height($(window).height());
+         }
+         
+         $(document).ready(function() {
+           calcHeight();
+           /*$('#header-bar a.close').mouseover(function() {
+             $('#header-bar a.close').addClass('activated');
+           }).mouseout(function() {
+             $('#header-bar a.close').removeClass('activated');
+           });*/
+         }); 
+         
+         $(window).resize(function() {
+           calcHeight();
+         }).load(function() {
+           calcHeight();
+         });
+      </script>
+   </head>
+   <body>
+      <iframe id="preview-frame" src="https://1v1.lol/" name="preview-frame" frameborder="0" noresize="noresize" style="height: 902px;">
+      </iframe>
+   </body>
+</html>
