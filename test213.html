@@ -5,7 +5,29 @@
     <title>
       NBTgames | play games online for free
     </title>
-<style>* {
+<style>
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 28px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+* {
 	border: 0;
 	box-sizing: border-box;
 	margin: 0;
@@ -149,6 +171,14 @@ label {
 		transform: translate(0,-1em) rotate(-180deg) translate(7.5em,-0.25em);
 	}
 }
+		.searchbar {
+			text-align: center;
+		}
+		#games {
+			position: absolute;
+			bottom: 0;
+            left: 0;
+		}
 </style>
 
     <link rel="stylesheet" type="text/css" href="./games.css">
@@ -156,21 +186,15 @@ label {
 
   <body>
 
-
+<div class="searchbar">
     <input id="searchbar" onkeyup="search_game()" type="text" name="search" placeholder="Search games..">
+    </div>
     <br>
 
-  <div align="middle">
+  <div id="games">
     <ol id='list'>
-      <li class="games"><a href="./games/1v1lol">1v1.lol</a></li>
-      <li class="games"><a href="./games/drifthunters">drift hunters</a></li>
-      <li class="games"><a href="./games/2048">2048</a></li>
-      <li class="games"><a href="./games/basketballstars">basketball stars</a></li>
-      <li class="games"><a href="./games/cookieclicker">cookieclicker</a></li>
-      <li class="games"><a href="./games/crossyroad">crossy road</a></li>
-      <li class="games"><a href="./games/deeeepio">deeeep.io</a></li>
-      <li class="games"><a href="./games/ducklife">ducklife</a></li>
-      <li class="games"><a href="./games/ducklife2">ducklife 2</a></li>
+      <li class="games"><button class="button" onclick="location.href='./games/1v1lol';" role="button"><h3>1v1 lol</h3>></li>
+      <li class="games"><button class="button" onclick="location.href='./games/1';" role="button"><h3>basket random</h3>></li>
     </ol>
     </div>
     <script>	window.addEventListener('keydown', function (e) {
